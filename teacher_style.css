@@ -1,0 +1,162 @@
+.teacher-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #f3e8ff;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.teacher-sidebar {
+    width: 250px;
+    background: #4c1d95;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.teacher-sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.teacher-sidebar-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.teacher-sidebar-logo h2 {
+    font-size: 18px;
+    color: #e9d5ff;
+}
+
+.teacher-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.teacher-nav-links li {
+    margin-bottom: 10px;
+}
+
+.teacher-nav-links a {
+    color: #d8b4fe;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.teacher-nav-links a:hover, .teacher-nav-links a.active {
+    background: #6b21a8;
+    color: white;
+}
+
+.teacher-sidebar-logout {
+    margin-top: auto;
+}
+
+.teacher-sidebar-logout button {
+    background: #7e18b0;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.teacher-sidebar-logout button:hover {
+    background: #a483b4;
+}
+
+.teacher-main-content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.teacher-header-card, .teacher-content-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.teacher-header-card h1, .teacher-content-card h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #4c1d95;
+}
+
+.teacher-header-card p, .teacher-content-card p {
+    text-align: left;
+    margin: 0;
+    color: #555;
+}
+
+/* Karagdagang estilo para sa form at table sa grading system */
+.teacher-content-card select,
+.teacher-content-card input[type="text"],
+.teacher-content-card input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.teacher-content-card select:focus,
+.teacher-content-card input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.teacher-content-card button[type="submit"] {
+    background: #7e22ce;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.teacher-content-card button[type="submit"]:hover {
+    background: #6b21a8;
+}
+
+.teacher-content-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.teacher-content-card th, 
+.teacher-content-card td {
+    padding: 12px;
+    border-bottom: 1px solid #f3e8ff;
+    text-align: left;
+}
+
+.teacher-content-card th {
+    background: #faf5ff;
+    color: #4c1d95;
+}

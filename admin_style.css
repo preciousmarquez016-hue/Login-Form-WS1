@@ -1,0 +1,140 @@
+.admin-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #f3e8ff;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: #4c1d95;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.admin-sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.admin-sidebar-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.admin-sidebar-logo h2 {
+    font-size: 18px;
+    color: #e9d5ff;
+}
+
+.admin-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.admin-nav-links li {
+    margin-bottom: 10px;
+}
+
+.admin-nav-links a {
+    color: #d8b4fe;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.admin-nav-links a:hover, .admin-nav-links a.active {
+    background: #6b21a8;
+    color: white;
+}
+
+.admin-sidebar-logout {
+    margin-top: auto;
+}
+
+.admin-sidebar-logout button {
+    background: #7e18b0;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-sidebar-logout button:hover {
+    background: #a483b4;
+}
+
+.admin-main-content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.admin-header-card, .admin-user-list-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.admin-header-card h1 {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #4c1d95;
+}
+
+.admin-header-card p {
+    text-align: left;
+    margin: 0;
+    color: #555;
+}
+
+.admin-user-list-card h3 {
+    color: #6b21a8;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #f3e8ff;
+    padding-bottom: 8px;
+}
+
+.admin-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin-user-table th, .admin-user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f3e8ff;
+}
+
+.admin-user-table th {
+    color: #4c1d95;
+    background: #faf5ff;
+}
+
+.admin-no-data {
+    color: #777;
+    font-style: italic;
+    font-size: 13px;
+}

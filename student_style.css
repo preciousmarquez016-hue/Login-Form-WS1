@@ -1,0 +1,109 @@
+.student-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #f3e8ff;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.student-sidebar {
+    width: 250px;
+    background: #4c1d95;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.student-sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.student-sidebar-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.student-sidebar-logo h2 {
+    font-size: 18px;
+    color: #e9d5ff;
+}
+
+.student-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.student-nav-links li {
+    margin-bottom: 10px;
+}
+
+.student-nav-links a {
+    color: #d8b4fe;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.student-nav-links a:hover, .student-nav-links a.active {
+    background: #6b21a8;
+    color: white;
+}
+
+.student-sidebar-logout {
+    margin-top: auto;
+}
+
+.student-sidebar-logout button {
+    background: #7e18b0;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.student-sidebar-logout button:hover {
+    background: #a483b4;
+}
+
+.student-main-content {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.student-header-card, .student-content-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.student-header-card h1, .student-content-card h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #4c1d95;
+}
+
+.student-header-card p, .student-content-card p {
+    text-align: left;
+    margin: 0;
+    color: #555;
+}
