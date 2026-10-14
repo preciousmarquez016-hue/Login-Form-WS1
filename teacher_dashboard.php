@@ -78,11 +78,11 @@ $grades_query = $conn->query("
         </div>
 
         <ul class="teacher-nav-links">
-            <li><a href="#" class="active">Dashboard</a></li>
-            <li><a href="#manage-grades">Grades</a></li>
-            <li><a href="#">Classes</a></li>
-            <li><a href="#">Students</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href="teacher_dashboard.php" class="active">Dashboard</a></li>
+            <li><a href="teacher_grades.php">Grades</a></li>
+            <li><a href="teacher_classes.php">Classes</a></li>
+            <li><a href="teacher_students.php">Students</a></li>
+            <li><a href="teacher_settings.php">Settings</a></li>
         </ul>
 
         <div class="teacher-sidebar-logout">
